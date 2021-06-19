@@ -3,17 +3,12 @@ package entity
 type JiraTransition struct {
 	LastState    string
 	CurrentState string
-	DateTime     string
 }
 
 type JiraEvent struct {
-	EventUser JiraUser
+	EventUser string
 	DateTime  string
-	Name      string
-}
-
-type JiraUser struct {
-	Username string
+	EventName string //webhook event
 }
 
 type JiraCustomField struct {
@@ -26,9 +21,9 @@ type JiraIssue struct {
 	Event        JiraEvent
 	Transitions  []JiraTransition
 	Key          string
-	Assignee     JiraUser
-	Creator      JiraUser
-	Reporter     JiraUser
+	Assignee     string
+	Creator      string
+	Reporter     string
 	ChangeDate   string
 	Priority     string
 	Status       string
