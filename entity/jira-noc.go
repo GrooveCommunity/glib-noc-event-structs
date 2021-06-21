@@ -11,12 +11,6 @@ type JiraEvent struct {
 	EventName string //webhook event
 }
 
-type JiraCustomField struct {
-	ID    string
-	Label string
-	Value string
-}
-
 type JiraIssue struct {
 	Event        JiraEvent
 	Transitions  []JiraTransition
@@ -33,5 +27,5 @@ type JiraIssue struct {
 	Summary      string
 	Description  string
 	Project      string
-	CustomFields []JiraCustomField
+	CustomFields []CustomField
 }

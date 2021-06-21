@@ -4,6 +4,7 @@ type CustomField struct {
 	CustomID      string
 	ID            string
 	Name          string
+	Label         string
 	Value         string
 	RequestType   RequestTypeCustomField
 	CurrentStatus CurrentStatusCustomField
