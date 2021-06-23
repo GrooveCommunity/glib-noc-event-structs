@@ -14,6 +14,7 @@ type JiraEvent struct {
 type JiraIssue struct {
 	Event        JiraEvent
 	Transitions  []JiraTransition
+	IssueID      string
 	Key          string
 	Assignee     string
 	Creator      string
