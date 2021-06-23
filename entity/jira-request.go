@@ -1,5 +1,12 @@
 package entity
 
+type JiraAttachmentRequest struct {
+	ID       string
+	Filename string
+	Created  string
+	Content  string
+}
+
 type JiraUserRequest struct {
 	Name string `json:"displayName"`
 }
@@ -68,6 +75,7 @@ type JiraFieldsRequest struct {
 	Summary      string
 	Status       JiraStatusRequest
 	Description  string
+	Attachment   []JiraAttachmentRequest
 	CustomFields []CustomField
 }
 
