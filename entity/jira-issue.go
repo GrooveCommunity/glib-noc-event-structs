@@ -28,4 +28,5 @@ type JiraIssue struct {
 	Description  string
 	Project      string
 	CustomFields []CustomField
+	Attachment   []JiraAttachmentRequest
 }
