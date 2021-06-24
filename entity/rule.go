@@ -1,6 +1,7 @@
 package entity
 
 type Field struct {
+	ID    string
 	Name  string
 	Value string
 }
