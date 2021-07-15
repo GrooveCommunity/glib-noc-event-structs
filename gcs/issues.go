@@ -1,9 +1,14 @@
 package gcs
 
 type IssueState struct {
-	EventName string
-	DateTime  string
-	User      string
+	EventName  string
+	EventDate  string
+	EventUser  string
+	CreateDate string
+	ChangeDate string
+	Priority   string
+	Assignee   string
+	Reporter   string
 }
 
 type Issue struct {
