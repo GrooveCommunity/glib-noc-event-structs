@@ -12,8 +12,8 @@ type IssueState struct {
 }
 
 type Issue struct {
-	KeyID string
-	State IssueState
+	KeyID  string
+	States []IssueState
 }
 
 type IssuesMetric struct {
