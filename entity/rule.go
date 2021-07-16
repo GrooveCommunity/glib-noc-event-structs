@@ -11,7 +11,6 @@ type ForwardInput struct {
 	HasAttachment    bool `json:"has_attachment"`
 	IgnoreAttachment bool `json:"ignore_attachment"`
 	Contents         []string
-	//Content          string
 }
 
 type ForwardOutput struct {
