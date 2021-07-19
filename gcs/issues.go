@@ -4,6 +4,7 @@ type IssueState struct {
 	EventName  string
 	EventDate  string
 	EventUser  string
+	Status     string
 	CreateDate string
 	ChangeDate string
 	Priority   string
